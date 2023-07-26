@@ -42,7 +42,7 @@ font-family: 'Lato', sans-serif;
 <!-- start of header -->
 <header>
 <section class="container mx-auto my-5 md:my-10">
-<div class="navbar bg-base-100 rounded-full flex justify-around items-center bg-main-color text-white">
+<div class="navbar bg-base-100 md:rounded-full flex justify-around items-center md:bg-main-color md:text-white">
 <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
         <li><a>Home</a></li>
@@ -69,12 +69,12 @@ font-family: 'Lato', sans-serif;
 <div class="flex-none md:gap-2">
 <div class=" flex justify-center items-center md:input  rounded-full input invisible md:visible ">
 
-<div>
-<input class="w-20 md:visible md:w-[300px] text-gray-500" type="text" placeholder="Search" />
-</div>
+    <div>
+        <input class="w-20 md:visible md:w-[300px] text-gray-500" type="text" placeholder="Search" />
+    </div>
 
 <div class=" md:visible" >
-<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
 </div>
 </div>
 
@@ -85,7 +85,7 @@ font-family: 'Lato', sans-serif;
 </label>
 
 <div class="relative inline-block text-center">
-<ul tabindex="1" class="dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28 right-0 text-black">
+<ul tabindex="1" class="dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 border-2 w-28 right-0 text-black">
     <li><a>Home</a></li>
     <li><a>About Us</a></li>
     <li><a>Shop</a></li>
@@ -104,88 +104,90 @@ font-family: 'Lato', sans-serif;
 <!-- slider start -->
 
 <section class="container mx-auto">
-
-<div class="carousel w-full mt-5">
-<!-- slide-1 -->
-<div id="slide1" class="carousel-item relative w-full">
-<div class="hero w-full h-[500px] bg-[url('./images/banner1.png')] rounded-lg">
-<div class="hero-overlay bg-opacity-60 rounded-lg"></div>
-<div class="hero-content text-center text-neutral-content pt-16">
-    <div class="max-w-md text-white static lg:absolute top-30">
-            <h1 class="text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
-            <p class="py-4 font-medium text-sm md:text-lg">We supply highly quality organic products
-            </p>
-            <button class="btn btn-primary bg-main-color bg-nav-primary  text-white mt-2 border-0">Shop
-                Now</button>
-        </div>
-</div>
-</div>
-
-<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-<a href="#slide3" class="btn btn-circle">❮</a>
-<a href="#slide2" class="btn btn-circle">❯</a>
-</div>
-</div>
-<!-- slide-2 -->
-<div id="slide2" class="carousel-item relative w-full">
-<div class="hero w-full h-[500px] bg-[url('./images/banner2.png')] rounded-lg">
-<div class="hero-overlay bg-opacity-60 rounded-lg"></div>
-<div class="hero-content text-center text-neutral-content pt-16">
-    <div class="max-w-md text-white static lg:absolute top-30">
-        <h1 class="text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
-        <p class="py-4 font-medium text-sm md:text-lg">We supply highly quality organic products
-        </p>
-        <button class="btn btn-primary bg-main-color bg-nav-primary text-white mt-2 border-0">Shop
-            Now</button>
-    </div>
-</div>
-</div>
-<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-<a href="#slide1" class="btn btn-circle">❮</a>
-<a href="#slide3" class="btn btn-circle">❯</a>
-</div>
-</div>
-<!-- slide-3 -->
-<div id="slide3" class="carousel-item relative w-full ">
-<div class="hero w-full h-[500px] bg-[url('./images/banner3.png')] rounded-lg">
-<div class="hero-overlay bg-opacity-60 rounded-lg"></div>
-    <div class="hero-content text-center text-neutral-content pt-16">
-     <div class="max-w-md text-white static lg:absolute top-30">
-        <h1 class="text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
-        <p class="py-4 font-medium text-sm md:text-lg">We supply highly quality organic products
-        </p>
-        <button class="btn btn-primary bg-main-color bg-nav-primary text-white mt-2 border-0">Shop
-            Now</button>
-     </div>
-    </div>
-</div>
-
-<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-    <a href="#slide2" class="btn btn-circle">❮</a>
-    <a href="#slide4" class="btn btn-circle">❯</a>
-</div>
-</div>
-<!-- slide-4 -->
-<div id="slide4" class="carousel-item relative w-full ">
-    <div class="hero w-full h-[500px] bg-[url('./images/banner4.png')] rounded-lg">
-    <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+<div class="mx-4 md:mx-0 my-4 md:my-0">
+    <div class="carousel w-full mt-5">
+        <!-- slide-1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+        <div class="hero w-full h-[500px] bg-[url('./images/banner1.png')] rounded-lg">
+        <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
         <div class="hero-content text-center text-neutral-content pt-16">
-         <div class="max-w-md text-white static lg:absolute top-30">
-            <h1 class="text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
-            <p class="py-4 font-medium text-sm md:text-lg">We supply highly quality organic products
-            </p>
-            <button class="btn btn-primary bg-main-color bg-nav-primary text-white mt-2 border-0">Shop
-                Now</button>
-         </div>
+            <div class="max-w-md text-white static lg:absolute top-30">
+                    <h1 class="text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="py-4 font-medium text-sm md:text-lg">We supply highly quality organic products
+                    </p>
+                    <button class="btn btn-primary bg-main-color bg-nav-primary  text-white mt-2 border-0">Shop
+                        Now</button>
+                </div>
         </div>
-    </div>
-    
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        </div>
+        
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
         <a href="#slide3" class="btn btn-circle">❮</a>
-        <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
-    </div>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+        </div>
+        <!-- slide-2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+        <div class="hero w-full h-[500px] bg-[url('./images/banner2.png')] rounded-lg">
+        <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+        <div class="hero-content text-center text-neutral-content pt-16">
+            <div class="max-w-md text-white static lg:absolute top-30">
+                <h1 class="text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="py-4 font-medium text-sm md:text-lg">We supply highly quality organic products
+                </p>
+                <button class="btn btn-primary bg-main-color bg-nav-primary text-white mt-2 border-0">Shop
+                    Now</button>
+            </div>
+        </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+        </div>
+        <!-- slide-3 -->
+        <div id="slide3" class="carousel-item relative w-full ">
+        <div class="hero w-full h-[500px] bg-[url('./images/banner3.png')] rounded-lg">
+        <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+            <div class="hero-content text-center text-neutral-content pt-16">
+             <div class="max-w-md text-white static lg:absolute top-30">
+                <h1 class="text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="py-4 font-medium text-sm md:text-lg">We supply highly quality organic products
+                </p>
+                <button class="btn btn-primary bg-main-color bg-nav-primary text-white mt-2 border-0">Shop
+                    Now</button>
+             </div>
+            </div>
+        </div>
+        
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+        </div>
+        <!-- slide-4 -->
+        <div id="slide4" class="carousel-item relative w-full ">
+            <div class="hero w-full h-[500px] bg-[url('./images/banner4.png')] rounded-lg">
+            <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+                <div class="hero-content text-center text-neutral-content pt-16">
+                 <div class="max-w-md text-white static lg:absolute top-30">
+                    <h1 class="text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="py-4 font-medium text-sm md:text-lg">We supply highly quality organic products
+                    </p>
+                    <button class="btn btn-primary bg-main-color bg-nav-primary text-white mt-2 border-0">Shop
+                        Now</button>
+                 </div>
+                </div>
+            </div>
+            
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            </div>
+        </div>
 </div>
+
 
     <!-- food types -->
     <div class="absolute left-[170px] top-[575px] h-auto w-9/12  py-5 z-20  shadow-lg rounded-lg hidden lg:block bg-white shadow-gray-400">
@@ -220,7 +222,7 @@ font-family: 'Lato', sans-serif;
 <!-- ------------date--------- -->
 <section class="container mx-auto md:mt-20 lg:mt-40">
     <div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
-        <div class="text-black-bg text-center lg:text-left space-y-5 leading-4">
+        <div class="text-black text-center mx-4 md:mx-0 lg:text-left space-y-5 leading-4">
             <h2 class="text-4xl font-extrabold">Why Choose Us</h2>
             <p class="text-lg font-medium ">Contrary to popular belief, is not simply random text. It has roots
                 in a
@@ -493,7 +495,7 @@ font-family: 'Lato', sans-serif;
 
 <section class="container mx-auto">
     <!-- meet the team -->
-    <section class="container mx-auto my-10 rounded-lg w-11/12 md:w-full gap-10 bg-[url('./images/banner1.png')]">
+    <section class="container mx-auto md:my-10 rounded-lg w-11/12 md:w-full  md:gap-10 bg-[url('./images/banner1.png')] bg-cover">
         <div class="hero min-h-screen bg-hero-bg">
             <div class="hero-overlay rounded-lg bg-opacity-60"></div>
             <div class="w-full md:w-8/12 text-center text-neutral-content max-2xl:">
@@ -645,18 +647,18 @@ font-family: 'Lato', sans-serif;
 
 <!-- Why Chose Us Part -->
 <section class="container mx-auto my-10">
-<div class="text-black-bg text-center space-y-5 leading-4">
+<div class="text-black-bg text-center mx-4 space-y-4 leading-4">
 <h2 class="text-4xl font-extrabold">Why Choose Us</h2>
 <p class="text-lg font-medium ">Contrary to popular belief, is not simply random text. It has roots in a
 piece of classical <br> Latin
 literature from 45 BC, making it over 2000 years old.</p>
 </div>
 <!-- grid -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10 ">
 <!-- no-1 -->
 <div>
 <!-- dedicated -->
-<div class="flex flex-col lg:flex-row gap-5 mb-9 justify-center">
+<div class="flex flex-col lg:flex-row gap-5 mb-9 justify-center md:order-1">
     <div class="flex justify-center">
         <div class="h-14 w-14 rounded-full bg-slate-200 flex justify-center items-center">
             <img class="h-6 w-6" src="./images/icon/group 1.png" alt="">
@@ -706,11 +708,11 @@ literature from 45 BC, making it over 2000 years old.</p>
 
 </div>
 <!-- no-2 -->
-<div class="mx-auto">
+<div class="mx-4 md:mx-auto order-first md:order-2">
 <img class="bg-cover" src="./images/whychoose1.png" alt="">
 </div>
 <!-- no-3 -->
-<div>
+<div class="md:order-3">
 <!-- integrated -->
 <div class="flex flex-col-reverse lg:flex-row gap-5 mb-9 justify-center">
 
@@ -769,12 +771,12 @@ literature from 45 BC, making it over 2000 years old.</p>
 </section>
 </main>
 <!-- start of footer -->
-<footer class="footer footer-center p-10 bg-black text-white rounded">
+<footer class="footer footer-center p-10 bg-black text-white">
 <div class="flex">
 <img class="h-14 w-14" src="./images/logo.png" alt="">
 <span class="text-4xl font-bold">Fruit Burst</span>
 </div>
-<div class="grid grid-cols-3 md:grid-cols-6 gap-4 text-lg font-medium">
+<div class="flex flex-wrap justify-center items-center gap-x-8 text-lg font-medium">
     <a class="link link-hover">Home</a>
     <a class="link link-hover">About</a>
     <a class="link link-hover">Shop</a>
@@ -785,10 +787,10 @@ literature from 45 BC, making it over 2000 years old.</p>
 <div>
 <div class="grid grid-flow-col gap-4">
     <a class="link link-hover"><i class="fa-brands fa-twitter fa-2xl"></i></i></a>
-    <a class="link link-hover"><i class="fa-brands fa-facebook fa-2xl"></i></i></a>
-    <a class="link link-hover"><i class="fa-brands fa-youtube fa-2xl"></i></a>
-    <a class="link link-hover"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-    <a class="link link-hover"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+    <a class="link link-hover"><i class="fa-brands fa-facebook text-blue-600 fa-2xl"></i></i></a>
+    <a class="link link-hover"><i class="fa-brands fa-youtube text-red-600 fa-2xl"></i></a>
+    <a class="link link-hover"><i class="fa-brands fa-linkedin-in text-white fa-2xl"></i></a>
+    <a class="link link-hover"><i class="fa-brands fa-instagram text-rose-700 fa-2xl"></i></a>
     <a class="link link-hover"><i class="fa-brands fa-apple fa-2xl"></i></a>
 </div>
 </div>
